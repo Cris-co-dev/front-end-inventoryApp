@@ -1,0 +1,121 @@
+:root {
+    --gris: #656565;
+    --gris-claro: #F2F1F1;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --azul-oscuro: #0D3041;
+
+    --drop-shadow: box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.25);
+}
+
+body {
+    width: 100% !important;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+p, label, .button {
+    font-size: 1.5rem;
+}
+
+.special-title {
+    font-size: 1.3rem;
+}
+
+.special-paragraph {
+    font-size: 1rem;
+}
+
+.little-paragraph {
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gris);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bg-gris {
+    background-color: var(--gris);
+}
+
+.bg-azul-oscuro {
+    background-color: var(--azul-oscuro);
+
+}
+.bg-blanco {
+    background-color: var(--blanco);
+}
+
+.tx-bold {
+    font-weight: bold;
+}
+
+.tx-negro {
+    color: var(--negro);
+}
+
+.tx-blanco {
+    color: var(--blanco);
+}
+
+.hero-img {
+    position: relative;
+    background-image: url('../assets/img/hero.png');
+    min-height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.6);
+    width: 100%;
+    inset: 0;
+}
+
+.hero-tx {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 10;
+}
+
+.card{
+ box-shadow: var(--drop-shadow);
+ border-radius: 15px 15px 15px 15px;
+}
+
+@media (min-width: 1600px)  {
+    .hero-tx {
+        width: 45%;  
+    }
+}

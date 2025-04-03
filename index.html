@@ -1,17 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/app.css">
-    <title>InventoryApp</title>
-</head>
-<body>
-    
-    <h1>InventoryApp</h1>
-    
-    <script src="js/app.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <title>InventoryApp</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <header class="container mb-3 pt-3">
+            <nav class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="" class="row align-items-center">
+                                <div class="col-3 p-0">
+                                    <img class="w-75" src="./assets/img/logo-icono.svg" alt="InventoryApp Logo" />
+                                </div>
+                                <p class="logo col-9 tx-negro">InventoryApp</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="d-flex align-items-center justify-content-between h-100">
+                        <a href="#" class="py-2">Caracteristicas</a>
+                        <a href="#" class="py-2">Planes</a>
+                        <a href="#" class="py-2">Testimonios</a>
+                        <a href="#" class="py-2">Contacto</a>
+                        <a href="#" class="py-2 tx-negro">Iniciar Sesión</a>
+                        <a href="#" class="py-2 px-4 tx-blanco bg-azul-oscuro rounded">Registrate</a>
+                    </div>
+                </div>
+               
+            </nav>
+        </header>
+
+        <section class="hero-img w-100">
+            <div class="hero-tx p-4">
+                <h1 class="my-4 text-center tx-bold tx-blanco">
+                    Gestiona tu inventario de forma simple y eficiente
+                </h1>
+                <p class="my-4 text-center tx-blanco px-5">
+                    Nuestra webapp te ayuda a controlar tu stock, registrar
+                    productos y generar reportes de ventas sin complicaciones.
+                </p>
+                <div class="my-4 d-flex justify-content-center align-items-center">
+                    <a href="" class="py-2 px-4 mx-4 rounded tx-bold bg-azul-oscuro tx-blanco button">Ver planes</a>
+                    <a href="" class="py-2 px-4 mx-4 rounded tx-bold bg-blanco tx-negro button">Contáctanos</a>
+                </div>
+            </div>
+        </section>
+
+        <main class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5 py-2 px-1">
+                    <h3 class="tx-bold px-2">Todo lo que necesitas para tu negocio</h3>
+                    <p class="px-5">InventoryApp ofrece todas las herramientas que necesitas para gestionar tu inventario y
+                        hacer crecer tu negocio.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center my-3">
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/gestion.svg" alt="Gestion icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Gestión de Productos</h3>
+                        <p class="special-paragraph">Registra y organiza todos tus productos con categorías, imágenes y descripciones detalladas.</p>   
+                    </div>
+                </div>
+                <div class="col-1 p-0"></div>
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/reportes.svg" alt="Reportes icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Reportes Detallados</h3>
+                        <p class="special-paragraph">Genera reportes de ventas, inventario y ganancias para tomar mejores decisiones.</p>   
+                    </div>
+                </div>
+                <div class="col-1 p-0"></div>
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/gestion-clientes.svg" alt="Gestion clientes icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Gestión de Clientes</h3>
+                        <p class="special-paragraph">Mantén un registro de tus clientes y sus historiales de compra para mejorar tu servicio.</p>   
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/alertas.svg" alt="Gestion icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Alertas de Inventario</h3>
+                        <p class="special-paragraph">Recibe notificaciones cuando tus productos estén por agotarse para reabastecerlos a tiempo..</p>   
+                    </div>
+                </div>
+                <div class="col-1 p-0"></div>
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/facil-check.svg" alt="Check icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Fácil de Usar</h3>
+                        <p class="special-paragraph">Interfaz intuitiva diseñada para que puedas gestionar tu negocio sin complicaciones.</p>   
+                    </div>
+                </div>
+                <div class="col-1 p-0"></div>
+                <div class="col-3">
+                    <div class="p-4 card">
+                        <img src="./assets/img/cualquier-lugar.svg" alt="Brujula icon" class="my-1 w-25">
+                        <h3 class="my-3 special-title tx-bold">Acceso desde Cualquier Lugar</h3>
+                        <p class="special-paragraph">Accede a tu inventario desde cualquier dispositivo, en cualquier momento y lugar.</p>   
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <script src="js/app.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    </body>
 </html>
