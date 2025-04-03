@@ -5,7 +5,7 @@
     --blanco: #ffffff;
     --azul-oscuro: #0D3041;
 
-    --drop-shadow: box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.25);
+    --drop-shadow: 2px 4px 4px 1px rgba(0,0,0,0.25);
 }
 
 body {
@@ -110,8 +110,12 @@ a {
 }
 
 .card{
- box-shadow: var(--drop-shadow);
- border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    height: 100%; 
+    box-shadow: var(--drop-shadow);
+    border-radius: 15px 15px 15px 15px;
 }
 
 @media (min-width: 1600px)  {
