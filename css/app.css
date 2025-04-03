@@ -29,7 +29,7 @@ h4 {
     font-size: 2.2rem;
 }
 
-p, label, .button {
+p, label {
     font-size: 1.5rem;
 }
 
@@ -37,7 +37,7 @@ p, label, .button {
     font-size: 1.3rem;
 }
 
-.special-paragraph {
+.special-paragraph, .button{
     font-size: 1rem;
 }
 
@@ -54,6 +54,10 @@ a {
     color: var(--gris);
 }
 
+li {
+    margin: 1.2rem 0;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -61,6 +65,10 @@ a {
 
 .bg-gris {
     background-color: var(--gris);
+}
+
+.bg-gris-claro {
+    background-color: var(--gris-claro);
 }
 
 .bg-azul-oscuro {
@@ -73,6 +81,10 @@ a {
 
 .tx-bold {
     font-weight: bold;
+}
+
+.tx-semi-bold {
+    font-weight: 600;
 }
 
 .tx-negro {
