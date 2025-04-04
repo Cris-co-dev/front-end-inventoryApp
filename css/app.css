@@ -38,11 +38,11 @@ p, label {
 }
 
 .special-paragraph, .button{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .little-paragraph {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 p {
@@ -56,6 +56,10 @@ a {
 
 li {
     margin: 1.2rem 0;
+}
+
+.p-6 {
+    padding: 6rem;
 }
 
 .logo {
@@ -87,12 +91,20 @@ li {
     font-weight: 600;
 }
 
+.tx-medium {
+    font-weight: 500;
+}
+
 .tx-negro {
     color: var(--negro);
 }
 
 .tx-blanco {
     color: var(--blanco);
+}
+
+.tx-gris {
+    color: var(--gris);
 }
 
 .hero-img {
@@ -134,4 +146,9 @@ li {
     .hero-tx {
         width: 45%;  
     }
+}
+
+footer nav a {
+    display: block;
+    margin: 1rem 0;
 }
