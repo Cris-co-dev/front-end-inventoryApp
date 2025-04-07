@@ -29,22 +29,41 @@
 
         <form name="login-form" class="login-form" action="" method="post">
             <div class="header">
-                <h1>Iniciar Sesión</h1>
-                <span>Introduce tus credenciales para acceder a tu cuenta</span>
+                <h1>Crear una cuenta</h1>
+                <span>Ingresa tus datos para registrarte en InventoryApp</span>
             </div>
             <div class="content">
                 <h2>Correo electrónico</h2>
                 <input name="email" type="email" class="input-email" placeholder="correo@ejemplo.com"/>
-                    <div class="user-icon"></div>
-                        <h2>Contraseña<span class="reset"><a href="#">¿Olvidaste tu contraseña?</a></span></h2>
-                        <input name="password" type="password" class="input-password" />
-                            <div class="pass-icon"></div>		
             </div>
-            <div class="footer">
-             <input type="submit" name="submit" value="Iniciar Sesión" class="button" />
-                    <p>¿No tienes una cuenta? <a href="#"class="blue">Regístrate</a>
+            <div class="content-name">
+                <div class="d-flex justify-content-between h-100">
+                    <label for= "fname">Nombre</label>
+                    <label for= "fltname"> Apellido</label>
+                </div>
+            </div>
+            <div class="content-input-name">
+                <div class="d-flex align-items-center justify-content-between h-100">
+                    <input name="name" type="text" class="text" placeholder="Juan" />
+                    <input name="lastname" type="text" class="text" placeholder="Mora" />
+                </div>
+            </div>    
+            <div class="content">
+                <h2>Nombre de tu negocio</h2>
+                <input name="text" type="text" class="input-email" placeholder="Mi tienda"/>
+                                
+                <h2>Contraseña</h2>
+                <input name="password" type="password" class="input-password" />
+
+                <h2>Confirmar contraseña</h2>
+                <input name="password" type="password" class="input-password" />
+            </div>
+                            
+                 <div class="footer">
+                    <input type="submit" name="submit" value="Registrarse" class="button" />
+                      <p>¿Ya tienes una cuenta? <a href="#"class="blue">Iniciar sesión</a>
                         <span class="fontawesome-arrow-right"></span></p>
-            </div>
+                 </div>
             
         </form>
     </div>
