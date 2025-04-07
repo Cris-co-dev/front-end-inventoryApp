@@ -1,0 +1,76 @@
+:root {
+  --gris: #656565;
+  --gris-claro: #f2f1f1;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --azul-oscuro: #0d3041;
+
+  --drop-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  width: 100% !important;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gris);
+}
+
+li {
+  margin: 1.2rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bg-gris {
+  background-color: var(--gris);
+}
+
+.bg-gris-claro {
+  background-color: var(--gris-claro);
+}
+
+.bg-azul-oscuro {
+  background-color: var(--azul-oscuro);
+}
+
+.bg-blanco {
+  background-color: var(--blanco);
+}
+
+.tx-bold {
+  font-weight: bold;
+}
+
+.tx-semi-bold {
+  font-weight: 600;
+}
+
+.tx-negro {
+  color: var(--negro);
+}
+
+.tx-blanco {
+  color: var(--blanco);
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
