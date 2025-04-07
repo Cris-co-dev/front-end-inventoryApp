@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-    <div class="col-4">
+    <div class="ini-login">
         <div class="row">
             <div class="col-12">
                 <a href="" class="row align-items-center">
@@ -35,23 +35,35 @@
             <div class="content">
                 <h2>Correo electrónico</h2>
                 <input name="email" type="email" class="input-email" placeholder="correo@ejemplo.com"/>
-                
-                <h2>Nombre</h2>
-                <input name="text" type="text" class="input-email" placeholder="Juan"/>
-                
-                
-                <div class="user-icon"></div>
-
-                <h2>Contraseña<span class="reset"><a href="#">¿Olvidaste tu contraseña?</a></span></h2>
+            </div>
+            <div class="content-name">
+                <div class="d-flex justify-content-between h-100">
+                    <label for= "fname">Nombre</label>
+                    <label for= "fltname"> Apellido</label>
+                </div>
+            </div>
+            <div class="content-input-name">
+                <div class="d-flex align-items-center justify-content-between h-100">
+                    <input name="name" type="text" class="text" placeholder="Juan" />
+                    <input name="lastname" type="text" class="text" placeholder="Mora" />
+                </div>
+            </div>    
+            <div class="content">
+                <h2>Nombre de tu negocio</h2>
+                <input name="text" type="text" class="input-email" placeholder="Mi tienda"/>
+                                
+                <h2>Contraseña</h2>
                 <input name="password" type="password" class="input-password" />
 
-                <div class="pass-icon"></div>		
+                <h2>Confirmar contraseña</h2>
+                <input name="password" type="password" class="input-password" />
             </div>
-            <div class="footer">
-             <input type="submit" name="submit" value="Iniciar Sesión" class="button" />
-                    <p>¿No tienes una cuenta? <a href="#"class="blue">Regístrate</a>
+                            
+                 <div class="footer">
+                    <input type="submit" name="submit" value="Registrarse" class="button" />
+                      <p>¿Ya tienes una cuenta? <a href="#"class="blue">Iniciar sesión</a>
                         <span class="fontawesome-arrow-right"></span></p>
-            </div>
+                 </div>
             
         </form>
     </div>
