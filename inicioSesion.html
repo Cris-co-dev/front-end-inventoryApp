@@ -27,7 +27,7 @@
     </div>
     <div id="login">
 
-        <form name="login-form" class="login-form" action="" method="post">
+        <form id="formLogin" name="login-form" class="login-form" method="post">
             <div class="header">
                 <h1>Iniciar Sesión</h1>
                 <span>Introduce tus credenciales para acceder a tu cuenta</span>
@@ -41,14 +41,19 @@
                             <div class="pass-icon"></div>		
             </div>
             <div class="footer">
-             <input type="submit" name="submit" value="Iniciar Sesión" class="button" />
-                    <p>¿No tienes una cuenta? <a href="#"class="blue">Regístrate</a>
+             <input type="submit" name="submit" value="Iniciar Sesión" id="iniciarSesion" class="button" />
+                    <p>¿No tienes una cuenta? <a href="./registro.html"class="blue">Regístrate</a>
                         <span class="fontawesome-arrow-right"></span></p>
             </div>
-            
+            <div class="p-4">
+                <div class="alert alert-danger px-4 hidden" role="alert" id="alert">
+                    <p>El correo o la contraseña es incorrecto!</p>
+                </div>
+            </div>
         </form>
     </div>
     <div class="gradient"></div>
-    
+    <script src="js/app.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>

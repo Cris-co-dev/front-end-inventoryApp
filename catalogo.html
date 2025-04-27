@@ -16,15 +16,15 @@
 
 <body>
   <header class="container mb-3 pt-3">
-    <nav class="row">
+    <nav class="row align-items-center">
       <div class="col-3">
         <div class="row">
           <div class="col-12">
-            <a href="index.html" class="row align-items-center">
+            <a href="usuarios.html" class="row align-items-center">
               <div class="col-3 p-0">
                 <img class="w-75" src="./assets/img/logo-icono.svg" alt="InventoryApp Logo" />
               </div>
-              <p class="logo col-9 tx-negro">InventoryApp</p>
+              <p class="logo col-9 tx-negro m-0">InventoryApp</p>
             </a>
           </div>
         </div>
@@ -32,12 +32,15 @@
       <div class="col-6">
         <h3 class="text-center fw-bold ">Categoria de productos</h3>
       </div>
+
       <div class="col-3">
-        <div class="d-flex align-items-center justify-content-between h-100">
-          <a href="#" class="py-2 tx-negro">Iniciar Sesión</a>
-          <a href="#" class="py-2 px-4 tx-blanco bg-azul-oscuro rounded">Registrate</a>
+        <div class="d-flex align-items-center justify-content-end h-100">
+            <p class="alert alert-dark"><span id="usuarioLogeado"></span></p>
         </div>
-      </div>
+    </div>
+
+
+
     </nav>
   </header>
 
@@ -47,10 +50,10 @@
     <main class="container">
       <div class="row my-5">
         <div class="col-3 text-center">
-          <a href="#" class="btn btn-outline-dark w-50">Mujer</a>
+          <a href="mujer.html" class="btn btn-outline-dark w-50">Mujer</a>
         </div>
         <div class="col-6 text-center">
-          <a href="#" class="btn btn-outline-dark w-50">Accesorios</a>
+          <a href="accesorio.html" class="btn btn-outline-dark w-50">Accesorios</a>
         </div>
         <div class="col-3 text-center">
           <a href="hombre.html" class="btn btn-outline-dark w-50">Hombre</a>
@@ -75,6 +78,9 @@
         </div>
       </div>
     </main>
+
+    <script src="js/app.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></scrip
 </body>
 
 </html>

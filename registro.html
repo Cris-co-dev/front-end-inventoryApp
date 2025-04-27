@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <title>Inicio de Sesión</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css" />
 </head>
+
 <body>
     <div class="ini-login">
         <div class="row">
@@ -27,19 +29,19 @@
     </div>
     <div id="login">
 
-        <form name="login-form" class="login-form" action="" method="post">
+        <form name="login-form" class="login-form" action="" method="post" id="registroForm">
             <div class="header">
                 <h1>Crear una cuenta</h1>
                 <span>Ingresa tus datos para registrarte en InventoryApp</span>
             </div>
             <div class="content">
                 <h2>Correo electrónico</h2>
-                <input name="email" type="email" class="input-email" placeholder="correo@ejemplo.com"/>
+                <input name="email" type="email" class="input-email" placeholder="correo@ejemplo.com" />
             </div>
             <div class="content-name">
                 <div class="d-flex justify-content-between h-100">
-                    <label for= "fname">Nombre</label>
-                    <label for= "fltname"> Apellido</label>
+                    <label for="fname">Nombre</label>
+                    <label for="fltname"> Apellido</label>
                 </div>
             </div>
             <div class="content-input-name">
@@ -47,27 +49,34 @@
                     <input name="name" type="text" class="text" placeholder="Juan" />
                     <input name="lastname" type="text" class="text" placeholder="Mora" />
                 </div>
-            </div>    
+            </div>
             <div class="content">
                 <h2>Nombre de tu negocio</h2>
-                <input name="text" type="text" class="input-email" placeholder="Mi tienda"/>
-                                
+                <input name="nombreNegocio" type="text" class="input-email" placeholder="Mi tienda" />
+
                 <h2>Contraseña</h2>
                 <input name="password" type="password" class="input-password" />
 
                 <h2>Confirmar contraseña</h2>
-                <input name="password" type="password" class="input-password" />
+                <input name="password2" type="password" class="input-password" />
             </div>
-                            
-                 <div class="footer">
-                    <input type="submit" name="submit" value="Registrarse" class="button" />
-                      <p>¿Ya tienes una cuenta? <a href="#"class="blue">Iniciar sesión</a>
-                        <span class="fontawesome-arrow-right"></span></p>
-                 </div>
-            
+
+            <div class="footer">
+                <input type="submit" name="submit" value="Registrarse" class="button" />
+                <p>¿Ya tienes una cuenta? <a href="#" class="blue">Iniciar sesión</a>
+                    <span class="fontawesome-arrow-right"></span>
+                </p>
+            </div>
+            <div class="p-4">
+                <div class="alert alert-danger px-4 hidden" role="alert" id="alert">
+                    <p>Las contraseñas deben ser iguales!</p>
+                </div>
+            </div>
         </form>
     </div>
     <div class="gradient"></div>
-    
+    <script src="js/app.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

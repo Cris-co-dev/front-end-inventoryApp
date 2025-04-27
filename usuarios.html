@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <title>InventoryApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+    <header class="container mb-3 pt-3">
+        <nav class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="index.html" class="row align-items-center">
+                            <div class="col-3 p-0">
+                                <img class="w-75" src="./assets/img/logo-icono.svg" alt="InventoryApp Logo" />
+                            </div>
+                            <p class="logo col-9 tx-negro">InventoryApp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="d-flex align-items-center justify-content-end h-100">
+                    <p class="alert alert-dark">Bienvenido: <span id="usuarioLogeado"></span></p>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="container py-5" id="mainVistaUsuario">
+
+        <div class="row">
+            <div class="col-12" id="visualizarUsuarios">
+                <h4>Usuarios:</h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-dark w-100" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Agregar un usuario
+                </button>
+                <a href="catalogo.html" class="btn btn-outline-dark w-100 my-4">
+                    Ir al Catalogo
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form action="post" id="agregarUsuario">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Agregar usuario</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="content">
+                                        <h5>Correo electrónico</h5>
+                                        <input required name="email" type="email" class="input-email w-100"
+                                            placeholder="correo@ejemplo.com" />
+                                    </div>
+                                    <div class="content-name my-3">
+                                        <div class="d-flex justify-content-between h-100">
+                                            <label for="fname">Nombre</label>
+                                            <label for="fltname"> Apellido</label>
+                                        </div>
+                                    </div>
+                                    <div class="content-input-name my-3">
+                                        <div class="d-flex align-items-center justify-content-between h-100">
+                                            <input name="name" type="text" class="text" placeholder="Juan" required />
+                                            <input name="lastname" type="text" class="text" placeholder="Mora"
+                                                required />
+                                        </div>
+                                    </div>
+                                    <div class="content my-3">
+                                        <h5>Contraseña</h5>
+                                        <input name="password" type="password" class="input-password w-100" required />
+                                        <h5>Confirmar contraseña</h5>
+                                        <input name="password2" type="password" class="input-password w-100" / required>
+                                    </div>
+                                    <div>
+                                        <select name="rol" id="rol1">
+                                            <option value="NA">Seleccionar un rol</option>
+                                            <option value="Visualizador">Visualizador</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="actualizarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="post" id="actualizarUsuario">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Actualizar usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-name my-3">
+                            <div class="d-flex justify-content-between h-100">
+                                <label for="fname">Nombre</label>
+                                <label for="fltname"> Apellido</label>
+                            </div>
+                        </div>
+                        <div class="content-input-name my-3">
+                            <div class="d-flex align-items-center justify-content-between h-100">
+                                <input name="name" type="text" class="text" placeholder="Juan" required />
+                                <input name="lastname" type="text" class="text" placeholder="Mora" required />
+                            </div>
+                        </div>
+                        <div>
+                            <select name="rol" id="rol2">
+                                <option value="NA">Seleccionar un rol</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Visualizador">Visualizador</option>
+                            </select>
+                        </div>
+                        <input name="email" type="hidden"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer class="container">
+        <nav>
+            <div class="row py-5 px-0 justify-content-evenly">
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="" class="row align-items-center">
+                                <div class="col-2 p-0">
+                                    <img class="w-75" src="./assets/img/logo-icono.svg" alt="InventoryApp Logo" />
+                                </div>
+                                <p class="logo p-0 col-10 tx-negro">InventoryApp</p>
+                            </a>
+                        </div>
+                        <p class="little-paragraph p-0 my-3">Sistema de gestión de inventario para pequeños negocios y
+                            emprendedores.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p class="little-paragraph">Producto</p>
+                    <a class="little-paragraph" href="">Caracteristicas</a>
+                    <a class="little-paragraph" href="">Planes</a>
+                    <a class="little-paragraph" href="">Demo</a>
+                </div>
+                <div class="col-2">
+                    <p class="little-paragraph">Empresa</p>
+                    <a class="little-paragraph" href="">Sobre Nosotros</a>
+                    <a class="little-paragraph" href="">blog</a>
+                </div>
+                <div class="col-2">
+                    <p class="little-paragraph">Legal</p>
+                    <a class="little-paragraph" href="">Privacidad</a>
+                    <a class="little-paragraph" href="">Términos y condiciones</a>
+                    <a class="little-paragraph" href="">Cookies</a>
+                </div>
+            </div>
+
+        </nav>
+    </footer>
+    <hr>
+    <div class="pb-3 pt-2">
+        <div class="text-center">
+            <p class="little-paragraph">© 2025 InventoryApp. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
