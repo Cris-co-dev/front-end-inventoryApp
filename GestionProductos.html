@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+  <title>Gestion de Productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  <header class="container mb-3 pt-3">
+    <nav class="row">
+      <div class="col-3">
+        <div class="row">
+          <div class="col-12">
+            <a href="index.html" class="row align-items-center">
+              <div class="col-3 p-0">
+                <img class="w-75" src="./assets/img/logo-icono.svg" alt="InventoryApp Logo" />
+              </div>
+              <p class="logo col-9 tx-negro">InventoryApp</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 class="text-center fw-bold ">Gestion de Productos</h3>
+      </div>
+      <div class="col-3">
+        <div class="d-flex align-items-center justify-content-between h-100">
+          <a href="#" class="py-2 tx-negro">Iniciar Sesión</a>
+          <a href="#" class="py-2 px-4 tx-blanco bg-azul-oscuro rounded">Registrate</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="col-12">
+
+    <div class="datatable-container">
+      
+          <table id="datatable" class="datatable">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Estado</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>tipo</th>
+                <th>Talla</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+              
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>RM001</td>
+                <td>Camisa Polo</td>
+                <td>MASCULINO</td>
+                <td>S</td>
+                <td>3</td>
+                <td>$45</td>
+              
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>RM002</td>
+                <td>Pnatalon Polo</td>
+                <td>MASCULINO</td>
+                <td>M</td>
+                <td>8</td>
+                <td>$54</td>
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>RM001</td>
+                <td>Camisa Polo</td>
+                <td>MASCULINO</td>
+                <td>L</td>
+                <td>10</td>
+                <td>$45</td>
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>RM003</td>
+                <td>Gaban</td>
+                <td>MASCULINO</td>
+                <td>XL</td>
+                <td>4</td>
+                <td>$65</td>
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>RF001</td>
+                <td>Camisa Polo</td>
+                <td>FEMENINO</td>
+                <td>S</td>
+                <td>10</td>
+                <td>$43</td>
+              
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>RF002</td>
+                <td>Chaqueta corta jean</td>
+                <td>FEMENINO</td>
+                <td>M</td>
+                <td>15</td>
+                <td>$60</td>
+              
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>RF002</td>
+                <td>Camisa Polo</td>
+                <td>FEMENINO</td>
+                <td>L</td>
+                <td>10</td>
+                <td>$43</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="away"></span></td>
+                <td>ACC001</td>
+                <td>Gafas</td>
+                <td>ACCESORIOS</td>
+                <td>HOMBRE</td>
+                <td>15</td>
+                <td>$30</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC002</td>
+                <td>RELOJ Rosado</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>15</td>
+                <td>$30</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC004</td>
+                <td>Aretes largos</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>5</td>
+                <td>$22</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC003</td>
+                <td>RELOJ Azul</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>15</td>
+                <td>$30</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC005</td>
+                <td>Sombrero Playa</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>15</td>
+                <td>$25</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC006</td>
+                <td>Gorra Plana</td>
+                <td>ACCESORIOS</td>
+                <td>HOMBRE</td>
+                <td>12</td>
+                <td>$45</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC007</td>
+                <td>Cadena</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>8</td>
+                <td>$45</td>
+                
+              </tr>
+              <tr>
+                <td clas="table-checbox"><input type="checkbox" name="" id=""></td>
+                <td><span class="available"></span></td>
+                <td>ACC003</td>
+                <td>RELOJ violeta</td>
+                <td>ACCESORIOS</td>
+                <td>MUJER</td>
+                <td>15</td>
+                <td>$25</td>
+                
+              </tr>
+
+            </tbody>
+
+          </table>
+
+         <script src="/home/giovanny-barbosa/Documentos/Front-end-InventoryApp/front-end-inventoryApp/js/maindatatable.js"></script>
+
+         <script>
+          const dt = new DataTable('#datatable', [
+            {
+              id: 'bAdd',
+              text: 'agregar',
+              icon: 'add_circle',
+              action: function(){
+                //codigo callback
+                console.log('agregar un nuevo dato')
+              }
+            },
+            {
+              id: 'bDelete',
+              text: 'eliminar',
+              icon: 'delete',
+              action: function(){
+                //codigo callback
+                console.log('eliminar un nuevo dato')
+              }
+            },
+            {
+              id: 'bEdit',
+              text: 'editar',
+              icon: 'edit',
+              action: function(){
+                //codigo callback
+                console.log('editar un nuevo dato')
+              }
+            }
+          ] );
+
+          dt.parse();
+
+         </script>
+      
+        </div>
+  </div>
+
+  </body>
+
+</html>
