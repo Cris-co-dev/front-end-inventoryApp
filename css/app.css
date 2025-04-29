@@ -312,3 +312,136 @@ footer nav a {
 .hidden {
     display: none;
 }
+/*Gestion Productos*/
+
+
+.datatable-container .material-icons{
+    font-size: 16px;    
+}
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--blanco);
+    border-radius: var(--azul-oscuro);
+    color: var(--azul-oscuro);
+    width: flex;
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+.datatable-container .header-tools{
+    border-bottom: solid 1px var(--gris);
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+.datatable-container .search{
+    width: 30%;
+}
+
+.datatable-container .search-input{
+    width: 100%;
+    background-color: var(--gris-claro);
+    display: block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: solid 1px var(--gris);
+    color: var(--azul-oscuro);
+}
+
+.datatable-container .tools{
+    width: 70%;
+}
+
+.datatable-container .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.datatable-container .tools ul li{
+    display: inline-block;
+    margin: 2px;
+    align-items: baseline;
+}
+.datatable-container .footer-tools{
+    padding: 12px;
+    display: flex;
+    align-items: baseline;
+}
+.datatable-container .list-items{
+    width: 50%; 
+}
+.datatable-container .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+.datatable-container .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .pages ul li{
+    display: inline-block;
+    margin: 2px;
+}
+
+.datatable-container .pages ul li button,
+.datatable-container .tools ul li button{
+    color: var(--azul-oscuro);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 2px;
+    background: transparent;
+}
+.pages ul li button:hover,
+.tools ul li button:hover{
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+.pages ul li span.active{
+    background-color: var(--gris);
+    border-radius: var(--negro);
+}
+
+.pages ul li button,
+.pages ul li span,
+.tools ul li button{
+    padding: 6px 12px;
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: 12px 12px;
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--azul-oscuro);
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px var(--gris);
+}
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--gris-claro);
+}
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--gris);
+}
